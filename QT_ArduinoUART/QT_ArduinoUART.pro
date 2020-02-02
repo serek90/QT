@@ -1,14 +1,15 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-11-04T21:24:27
+# Project created by QtCreator 2020-01-29T11:19:27
 #
 #-------------------------------------------------
 
 QT       += core gui
+QT       += serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Calculator
+TARGET = QT_ArduinoUART
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -26,13 +27,13 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        calculator.cpp
+        mainwindow.cpp
 
 HEADERS += \
-        calculator.h
+        mainwindow.h
 
 FORMS += \
-        calculator.ui
+        mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
