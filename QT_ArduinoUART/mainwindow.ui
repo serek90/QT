@@ -19,12 +19,12 @@
      <rect>
       <x>9</x>
       <y>9</y>
-      <width>561</width>
-      <height>341</height>
+      <width>581</width>
+      <height>90</height>
      </rect>
     </property>
     <property name="title">
-     <string>Połączenie</string>
+     <string>Logi</string>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
@@ -33,6 +33,9 @@
         <string>Szukaj</string>
        </property>
       </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="comboBoxDevices"/>
      </item>
      <item row="1" column="0">
       <widget class="QPushButton" name="pushButtonRozlacz">
@@ -48,8 +51,52 @@
        </property>
       </widget>
      </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>581</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Logi</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QTextEdit" name="LogScope"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>581</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Logi</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
      <item row="0" column="1">
-      <widget class="QComboBox" name="comboBoxDevices"/>
+      <widget class="QPushButton" name="pushButtonLOD_Off">
+       <property name="text">
+        <string>Wylacz Diode</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Wlacz Diode</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
